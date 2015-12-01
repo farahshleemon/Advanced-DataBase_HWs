@@ -1,9 +1,7 @@
 from bottle import default_app, run, route
 from bottle import get, put, post, request, template
 from bottle import static_file
-
 from items import *
-
 @get('/')
 @get('/list')
 @get('/list/<status:int>')
@@ -13,7 +11,6 @@ def get_list(status=-1):
     for item in items:
         result.append((item['_id'],item['task'],item['status']))
     return template('list_view', rows=result)
-
 @get('/new') 
 def get_new():
     return '''
@@ -22,19 +19,16 @@ def get_new():
             To be done: <input name="task" type="text" />
             <input value="Save" type="submit" />
         </form>
-    '''
-    
+    '''    
 @post('/new')
 def post_new():
     task = request.forms.get('task', '').strip()
     new_item(task,1)
     return get_list()
-
 @get('/edit/<id>')
 def get_edit(id):
     item = get_item(str(id))
     return template('edit_view', id=id, task=item['task'], status=item['status'])
-
 @post('/edit/<id>')
 def post_edit(id):
     task = request.forms.get('task', '').strip()
