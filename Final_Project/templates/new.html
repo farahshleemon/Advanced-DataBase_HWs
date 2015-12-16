@@ -1,0 +1,50 @@
+<html ><head>
+<meta charset=utf-8" />
+<title>Add New Document</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+<script src="../static/proj.js"></script>
+
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<div id="wrap">
+<div id="header" ><br />
+<br />
+<h1>Add New Document</h1>
+
+</div>
+<div id="nav">
+<ul>
+<li><a href="http://localhost:8001/">Home</a></li>
+<li><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2002/g9qy-h66j">View</a></li>
+<li><a href="http://localhost:8001/edit">Edit</a></li>
+<li><a href="http://localhost:8001/new">New</a></li>
+<li><a href="http://localhost:8001/delete">Delete</a></li>
+<li><a href="http://localhost:8001/QBY">Query By Year</a></li>
+<li><a href="http://localhost:8001/BarChart">Statistic Visualization</a></li> 
+
+</ul>
+</div>
+<div id="content">
+<hr/>
+<form>
+<table style="font-weight:bold; font-size:large"> 
+<tr><td>ID:<br/><input id="ID1" value="122334547" type="text" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Case Number:<br/><input id="CNumber1" value="HY23456"  type="text" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td> Date:<br/><input id="Date1" value="11/12/2001 11:34:00 pm" type="text" size="40"style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr>			
+<tr><td>Block:<br/><input id="Block1" value="xfer" type="text" size="50"style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>IUCR:<br/><input id="iucr1" type="text" value="1410" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Primary Type:<br/><input id="PT1" value="Robbery" type="text" size="40"style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>Description:<br/><input id="DEC1" value="Without_Gun" type="text" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Location Description:<br/><input id="LDEC1" value="street" type="text" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Arrest:<br/><input id="Arr1" value="?" type="text" size="40" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>Domestic:<br/><input id="DOM1" value="?" type="text" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Beat:<br/><input id="Beat1" type="text" value="0234" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>District:<br/><input id="Dis1" type="text" value="34" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>Ward:<br/><input id="Ward1" type="text" value="56" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>District:<br/><input id="Distr1" type="text" value="05" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Community Area:<br/><input id="Com1" type="text" value="f" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>FBI Code:<br/><input id="FB1" type="text" value="54" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>X Coordinate:<br/><input id="X1" type="text" value="114356" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Y Coordinate:<br/><input id="Y1" type="text" value="234566" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>Year:<br/><input id="Ye1" type="text" value="2001" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Updated On:<br/><input id="UP1" type="text" value="2015" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Latitude:<br/><input id="Lat1" type="text" value="23.4566" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td></tr> 
+<tr><td>Longitude:<br/><input id="Lon1" type="text" value="114.4564" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Location:<br/><input id="Loc1" type="text" value="Chicago" size="50" style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:white;"></td><td>Insert to the Database:<br/><input type="button" id="S3"  style="width: 350px; font-size:large;Color:black; font-weight:bold;background-color:#ddd;" value="Submit" onclick="SendPost();"></td></tr> 
+</table>
+<hr/>
+</form>
+</div>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

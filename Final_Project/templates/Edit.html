@@ -1,0 +1,55 @@
+<html ><head>
+<meta charset=utf-8" />
+<title>Edit the Document</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+<script src="../static/proj.js"></script>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<div id="wrap">
+<div id="header" ><br />
+<br />
+<h1>Edit the Selected Document</h1>
+
+</div>
+<div id="nav">
+<ul>
+<li><a href="http://localhost:8001/">Home</a></li>
+<li><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2002/g9qy-h66j">View</a></li>
+<li><a href="http://localhost:8001/edit">Edit</a></li>
+<li><a href="http://localhost:8001/new">New</a></li>
+<li><a href="http://localhost:8001/delete">Delete</a></li>
+<li><a href="http://localhost:8001/QBY">Query By Year</a></li>
+<li><a href="http://localhost:8001/BarChart">Statistic Visualization</a></li> 
+
+</ul>
+</div>
+<div id="content">
+<form style="font-weight:bold;">
+            Case Number: <input id="CNumberED" type="text" size="53">
+            <input type="button" value="Submit" onclick="SendPostEdit();" style="width: 405px;Color:#00f; font-weight:bold;font-size:large;background-color:#ddd;">
+			<hr/>
+			<hr/>
+
+<table style="font-weight:bold;font-size:x-large"> 
+<tr><td>ID:<br/><input id="ID2"  type="text" size="40"></td><td>Case Number:<br/><input id="CNumber2"   type="text" size="40"></td><td> Date:<br/><input id="Date2"  type="text" size="40"></td></tr>			
+<tr><td>Block:<br/><input id="Block2"  type="text" size="40"></td><td>IUCR:<br/><input id="iucr2" type="text"  size="40"></td><td>Primary Type:<br/><input id="PT2"  type="text" size="40"></td></tr> 
+<tr><td>Description:<br/><input id="DEC2"  type="text" size="40"></td><td>Location Description:<br/><input id="LDEC2" type="text" size="40"></td><td>Arrest:<br/><input id="Arr2"  type="text" size="40"></td></tr> 
+<tr><td>Domestic:<br/><input id="DOM2"  type="text" size="40"></td><td>Beat:<br/><input id="Beat2" type="text"  size="40"></td><td>District:<br/><input id="Dis2" type="text"  size="40"></td></tr> 
+<tr><td>Ward:<br/><input id="Ward2" type="text"  size="40"></td><td>District:<br/><input id="Distr2" type="text"  size="40"></td><td>Community Area:<br/><input id="Com2" type="text"  size="40"></td></tr> 
+<tr><td>FBI Code:<br/><input id="FB2" type="text"  size="40"></td><td>X Coordinate:<br/><input id="X2" type="text"  size="40"></td><td>Y Coordinate:<br/><input id="Y2" type="text"  size="40"></td></tr> 
+<tr><td>Year:<br/><input id="Ye2" type="text"  size="40"></td><td>Updated On:<br/><input id="UP2" type="text"  size="40"></td><td>Latitude:<br/><input id="Lat2" type="text"  size="40"></td></tr> 
+<tr><td>Longitude:<br/><input id="Lon2" type="text" size="40"></td><td>Location:<br/><input id="Loc2" type="text"  size="40"></td><td>Update the Document:<br/><input type="button" id="S5"  style="font-size:large;width: 310px;Color:#00f; font-weight:bold;background-color:#ddd;" value="Submit" onclick="SendPostUpdate();"></td></tr> 
+</table>
+<hr/>
+</form>
+        
+		
+</div>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

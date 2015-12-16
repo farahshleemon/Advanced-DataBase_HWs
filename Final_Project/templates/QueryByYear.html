@@ -1,0 +1,60 @@
+<html ><head>
+<meta charset=utf-8" />
+<title>Query By Year</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+<script src="../static/proj.js"></script>
+   <head>        
+        <style type="text/css">
+            div.table1 { 
+            width: 1200px; 
+            height: auto;
+			overflow-x:scroll;  
+            margin-left:5em; 
+            overflow-y:scroll;
+            padding-bottom:1px;
+			display: none;
+            
+        }
+        </style>
+    </head>
+<body>
+<div id="wrap">
+<div id="header" ><br />
+<br />
+<h1>Query by Year</h1>
+
+</div>
+<div id="nav">
+<ul>
+<li><a href="http://localhost:8001/">Home</a></li>
+<li><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2002/g9qy-h66j">View</a></li>
+<li><a href="http://localhost:8001/edit">Edit</a></li>
+<li><a href="http://localhost:8001/new">New</a></li>
+<li><a href="http://localhost:8001/delete">Delete</a></li>
+<li><a href="http://localhost:8001/QBY">Query By Year</a></li>
+<li><a href="http://localhost:8001/BarChart">Statistic Visualization</a></li> 
+
+</ul>
+</div>
+<div id="content">
+<form>
+            Year:<input type="text" size="40" id="Year">
+            <input id="s2" type="button" value="Submit" onclick="SendYear();">
+        </form>
+        <hr/>
+        
+</div>
+<div id="tab1" class="table1">
+    
+</div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+</body>
+
+
+        
+        
+        
+</html>
